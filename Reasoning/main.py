@@ -4,7 +4,7 @@ import httpx
 
 app = FastAPI()
 
-TARGET = "https://api.pioneer.ai/v1"
+TARGET = "https://api.pioneer.ai"
 
 @app.api_route("/{path:path}", methods=["GET", "POST", "PUT", "DELETE"])
 async def proxy(request: Request, path: str):
